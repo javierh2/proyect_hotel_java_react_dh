@@ -3,9 +3,7 @@ package com.roomhotel.roomhotel.dto;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
+import lombok.*;
 
 /*
 DTO  viaja entre frontend y backend
@@ -13,7 +11,8 @@ DTO  viaja entre frontend y backend
    → uno para RECIBIR datos (Request)
    → uno para ENVIAR datos (Response)
  */
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class RoomRequestDTO {
