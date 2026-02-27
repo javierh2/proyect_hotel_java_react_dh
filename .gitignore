@@ -1,0 +1,21 @@
+# ── Archivos del sistema Mac ──
+.DS_Store
+**/.DS_Store
+
+# ── Dependencias de Node ──
+node_modules/
+
+# ── Variables de entorno ──
+.env
+.env.local
+
+# ── Build de React ──
+dist/
+
+# ── Logs ──
+*.log
+
+# ── IntelliJ ──
+.idea/
+*.iml
+target/
