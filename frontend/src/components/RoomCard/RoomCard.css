@@ -1,0 +1,136 @@
+.room-card {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(44, 62, 80, 0.08);
+    transition: all 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.room-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(44, 62, 80, 0.15);
+}
+
+
+.room-card__image-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.room-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.room-card:hover .room-card__image {
+    transform: scale(1.05);
+}
+
+
+.room-card__badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #2C3E50;
+    color: #F9F3EE;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+.room-card__content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.room-card__name {
+    font-size: 17px;
+    font-weight: 700;
+    color: #2C3E50;
+    margin-bottom: 8px;
+    line-height: 1.3;
+
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.room-card__description {
+    font-size: 13px;
+    color: #9E8E82;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.room-card__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.room-card__price {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.room-card__price-amount {
+    font-size: 20px;
+    font-weight: 700;
+    color: #C47E5A;
+}
+
+.room-card__price-label {
+    font-size: 11px;
+    color: #9E8E82;
+}
+
+
+.room-card__btn {
+    padding: 9px 18px;
+    background-color: #2C3E50;
+    color: #F9F3EE;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+.room-card__btn:hover {
+    background-color: #C47E5A;
+}
+
+
+.room-card__image-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #EFE4D9, #E8C5B0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
