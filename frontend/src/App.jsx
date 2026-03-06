@@ -7,6 +7,8 @@ import Header from './components/Header/Header'
 import './index.css'
 // import del footer
 import Footer from './components/Footer/Footer'
+//import de la página Home
+import Home from './pages/Home/Home'
 
 
 const App = () => {
@@ -22,7 +24,7 @@ const App = () => {
         {/* Routes decide qué página mostrar según la URL actual */}
         <main className="app-main">
           <Routes>
-            <Route path="/" element={<h1>Bienvenido a Digital Booking</h1>}/>
+            <Route path="/" element={<Home />} />
           </Routes>
         </main>
 
